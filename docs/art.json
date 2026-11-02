@@ -1,0 +1,16 @@
+{
+  "out": "/Users/icyx/MainaSuperintelligenceltd/botble-plugins/app-downloader/art",
+  "raw": "/private/tmp/claude-501/-Users-icyx-MainaSuperintelligenceltd/e2bc15aa-1289-456b-bd26-90e018bea2c7/scratchpad/raw-app-downloader",
+  "name": "Smart App Downloader",
+  "tagline": "One /download link that sends every visitor to the right app store or installer.",
+  "accent": "#2f6bff",
+  "pluginScreenshot": true,
+  "bannerImage": "/private/tmp/claude-501/-Users-icyx-MainaSuperintelligenceltd/e2bc15aa-1289-456b-bd26-90e018bea2c7/scratchpad/raw-app-downloader/design-split.png",
+  "glyph": "<svg viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='1.6' stroke-linecap='round' stroke-linejoin='round'><rect x='6' y='2' width='12' height='20' rx='2.5'/><path d='M12 7v7'/><path d='m9 11 3 3 3-3'/><path d='M10 18.5h4'/></svg>",
+  "screens": [
+    {"file":"screenshot-1","title":"Set it up in one page","caption":"Store links or uploaded installers per platform, branding, page design, a copyable link with test buttons, and a QR code.","images":["settings.png"],"layout":"single"},
+    {"file":"screenshot-2","title":"The right button for every device","caption":"Phones go straight to their store. Anyone else gets a clean chooser page inside your own theme.","images":["design-minimal.png","mobile.png"],"layout":"pair"},
+    {"file":"screenshot-3","title":"Four page designs","caption":"Minimal, Hero, Split and Tiles. Each picks up your theme colour, or set your own accent.","images":["design-minimal.png","design-hero.png","design-split.png","design-tiles.png"],"labels":["Minimal","Hero","Split","Tiles"],"layout":"grid"},
+    {"file":"screenshot-4","title":"Know where installs come from","caption":"Daily visits per platform with no personal data stored, plus a printable QR code for packaging and posters.","images":["stats.png"],"layout":"single"}
+  ]
+}
