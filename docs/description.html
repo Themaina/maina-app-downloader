@@ -1,0 +1,243 @@
+<p><img src="https://raw.githubusercontent.com/Themaina/maina-app-downloader/main/art/banner.png" alt="Smart App Downloader"></p>
+<p>One link for every device. Share <code>https://your-site.com/download</code> and each visitor lands in the right place: iPhone and iPad go to the App Store, Android to Google Play, Windows and Mac to your installer. Anyone we can&#39;t identify sees a clean chooser page inside your theme.</p>
+<p><strong>Free and open source</strong> by <strong>Maina 888</strong> · Maina Superintelligence Ltd</p>
+<p><strong>Version:</strong> 1.1.0 · <strong>Requires:</strong> Botble CMS core 7.3.0+, PHP 8.2+ · <strong>License:</strong> MIT</p>
+<h2>Features</h2>
+<ul>
+<li><strong>Smart redirect</strong> from a single <code>/download</code> URL, based on the visitor&#39;s device.</li>
+<li><strong>8 platforms:</strong> iOS, Android, Huawei AppGallery, Amazon Appstore, Windows, Microsoft Store, macOS and Linux. Huawei and Amazon devices fall back to your Android link, and Windows falls back to your Microsoft Store link, if you haven&#39;t set their own.</li>
+<li><strong>Minimal chooser page</strong> for unknown devices or missing links: the visitor&#39;s platform as one big button, everything else underneath. It renders in your theme, picks up its primary colour, and needs no extra CSS or icon fonts.</li>
+<li><strong>Four page designs:</strong> Minimal, Hero, Split and Tiles, plus an optional accent colour. Preview any design from the settings page before saving.</li>
+<li><strong>Upload installers:</strong> upload an <code>.apk</code>, <code>.exe</code>/<code>.msi</code>, <code>.dmg</code>/<code>.pkg</code> or Linux package for Android, Huawei, Amazon, Windows, macOS and Linux right on the settings page. Large files are sent in chunks (up to 2 GB), stored privately and served as a download. An uploaded file is used instead of the platform&#39;s link.</li>
+<li><strong>Branding:</strong> app name, one-line pitch, app icon, and an optional &quot;Already installed? Open the app&quot; deep link (<code>myapp://…</code> or an https universal link).</li>
+<li><strong>Visit counter:</strong> daily hits per platform, shown on the settings page. No IP address, User-Agent or any personal data is stored, and you can switch it off.</li>
+<li><strong>QR code</strong> for your <code>/download</code> link on the settings page, downloadable as SVG for print.</li>
+<li><strong>Settings page</strong> under <em>Settings → Others → App Downloader</em> with a copy button and &quot;Test as iOS / Android / …&quot; links.</li>
+<li><strong>Translations:</strong> English, Vietnamese, Spanish, French and Arabic.</li>
+<li><strong>Lightweight and safe:</strong> one tiny table for the counter, no new Composer packages, http(s)-only links, and <code>Cache-Control: no-store</code> + <code>Vary: User-Agent</code> so CDNs never serve one visitor&#39;s redirect to another. Crawlers always get the chooser page, so it stays indexable.</li>
+</ul>
+<h2>Screenshots</h2>
+<table>
+<thead>
+<tr>
+<th>Settings</th>
+<th>Chooser page</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><img src="https://raw.githubusercontent.com/Themaina/maina-app-downloader/main/art/screenshot-1.png" alt="Settings"></td>
+<td><img src="https://raw.githubusercontent.com/Themaina/maina-app-downloader/main/art/screenshot-2.png" alt="Chooser page"></td>
+</tr>
+<tr>
+<td><img src="https://raw.githubusercontent.com/Themaina/maina-app-downloader/main/art/screenshot-3.png" alt="Designs"></td>
+<td><img src="https://raw.githubusercontent.com/Themaina/maina-app-downloader/main/art/screenshot-4.png" alt="Stats and QR code"></td>
+</tr>
+</tbody></table>
+<h2>Installation</h2>
+<h3>From the Botble Marketplace (recommended)</h3>
+<ol>
+<li>Go to <strong>Admin → Plugins → Add new</strong>.</li>
+<li>Search for <strong>Smart App Downloader</strong>, click <strong>Install</strong>, then <strong>Activate</strong>.</li>
+</ol>
+<p>Updates appear in <strong>Admin → Plugins</strong> whenever a new version is released.</p>
+<h3>From a release zip</h3>
+<ol>
+<li>Download <code>app-downloader-x.y.z.zip</code> from the <a href="https://github.com/Themaina/maina-app-downloader/releases/latest">latest release</a>.</li>
+<li>Go to <strong>Admin → Plugins → Add new → Upload</strong>, pick the zip, then <strong>Activate</strong>.</li>
+</ol>
+<h3>Manually</h3>
+<ol>
+<li>Copy the <code>app-downloader</code> folder to <code>platform/plugins/app-downloader</code>.</li>
+<li>Go to <strong>Admin → Plugins</strong> and click <strong>Activate</strong> (or run <code>php artisan cms:plugin:activate app-downloader</code>). Activation creates the counter table.</li>
+<li>If the routes don&#39;t appear, run <code>php artisan optimize:clear</code>.</li>
+</ol>
+<h2>Configuration</h2>
+<p>Open <strong>Admin → Settings → Others → App Downloader</strong>.</p>
+<table>
+<thead>
+<tr>
+<th>Setting</th>
+<th>What it does</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Auto-redirect visitors</td>
+<td>On: visitors go straight to the link for their device. Off: everyone sees the chooser page.</td>
+</tr>
+<tr>
+<td>Count visits</td>
+<td>Keeps a daily counter per platform for the stats on the settings page.</td>
+</tr>
+<tr>
+<td>Page design / Accent color</td>
+<td>Pick one of four designs; blank accent uses your theme colour.</td>
+</tr>
+<tr>
+<td>Upload installers</td>
+<td>Optional. A file uploaded for a platform replaces its link.</td>
+</tr>
+<tr>
+<td>Mobile / Desktop links</td>
+<td>One full <code>http://</code> or <code>https://</code> URL per platform. Leave blank to skip a platform.</td>
+</tr>
+<tr>
+<td>App name</td>
+<td>Page heading, e.g. &quot;Get Acme&quot;. Blank uses &quot;Get the App&quot;.</td>
+</tr>
+<tr>
+<td>One-line pitch</td>
+<td>Text under the heading.</td>
+</tr>
+<tr>
+<td>App icon</td>
+<td>Square image shown above the heading (144 × 144 px or larger).</td>
+</tr>
+<tr>
+<td>&quot;Open in app&quot; link</td>
+<td>Optional deep link, e.g. <code>myapp://open</code>. Adds an &quot;Already installed?&quot; link to the chooser page.</td>
+</tr>
+</tbody></table>
+<h2>Usage</h2>
+<table>
+<thead>
+<tr>
+<th>URL</th>
+<th>Behaviour</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>/download</code></td>
+<td>Detects the device and redirects (HTTP 302). Falls back to the chooser page.</td>
+</tr>
+<tr>
+<td><code>/download?chooser=1</code></td>
+<td>Always shows the chooser page, no redirect. Good for &quot;Other platforms&quot; and &quot;Open in app&quot; links.</td>
+</tr>
+<tr>
+<td><code>/download?platform=ios</code></td>
+<td>Forces a platform (<code>ios</code>, <code>android</code>, <code>huawei</code>, <code>amazon</code>, <code>windows</code>, <code>microsoft</code>, <code>macos</code>, <code>linux</code>). Good for per-platform QR codes.</td>
+</tr>
+<tr>
+<td><code>/download?design=hero</code></td>
+<td>Previews a design (<code>minimal</code>, <code>hero</code>, <code>split</code>, <code>tiles</code>) without saving.</td>
+</tr>
+<tr>
+<td>add <code>&amp;preview=1</code></td>
+<td>Skips the visit counter. The test links on the settings page use it.</td>
+</tr>
+</tbody></table>
+<p>Good places for the link: QR codes on print and packaging, email footers, social bios, smart banners, and a &quot;Download the app&quot; menu item (add <code>/download</code> as a custom link in <strong>Appearance → Menus</strong>).</p>
+<h3>How detection works</h3>
+<table>
+<thead>
+<tr>
+<th>Platform</th>
+<th>Matched when the User-Agent contains</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>iOS</td>
+<td><code>iPhone</code>, <code>iPad</code>, <code>iPod</code>, or <code>Macintosh</code> + <code>Mobile</code> (iPadOS in desktop mode)</td>
+</tr>
+<tr>
+<td>Huawei</td>
+<td><code>Android</code>/<code>HarmonyOS</code> + <code>HUAWEI</code>, <code>HONOR</code>, <code>HMSCore</code> or <code>HuaweiBrowser</code></td>
+</tr>
+<tr>
+<td>Amazon</td>
+<td><code>Android</code> + <code>Silk</code>, a Fire tablet model (<code>KF…</code>, <code>AFT…</code>) or <code>Kindle Fire</code></td>
+</tr>
+<tr>
+<td>Android</td>
+<td>any other <code>Android</code></td>
+</tr>
+<tr>
+<td>Windows</td>
+<td><code>Windows</code>, <code>Win32</code>, <code>Win64</code>, <code>WOW64</code></td>
+</tr>
+<tr>
+<td>macOS</td>
+<td><code>Macintosh</code> or <code>Mac OS X</code></td>
+</tr>
+<tr>
+<td>Linux</td>
+<td><code>Linux</code> or <code>X11</code> (ChromeOS is excluded)</td>
+</tr>
+<tr>
+<td>anything else</td>
+<td>chooser page</td>
+</tr>
+</tbody></table>
+<h3>Customising the chooser page</h3>
+<ul>
+<li><strong>In your theme:</strong> create <code>platform/themes/&lt;your-theme&gt;/views/download.blade.php</code>. It takes priority over the plugin&#39;s view and receives <code>$links</code> (platform =&gt; URL), <code>$detected</code>, <code>$recommended</code> (the platform whose link applies), <code>$title</code>, <code>$description</code>, <code>$iconUrl</code> and <code>$deepLink</code>.</li>
+<li><strong>Without touching the plugin:</strong> copy <code>resources/views/themes/fallback.blade.php</code> to <code>resources/views/vendor/plugins/app-downloader/themes/fallback.blade.php</code> in your site root.</li>
+<li><strong>Translations:</strong> copy <code>resources/lang/en/app-downloader.php</code> to <code>lang/vendor/plugins/app-downloader/&lt;locale&gt;/app-downloader.php</code> in your site root.</li>
+</ul>
+<h2>Troubleshooting</h2>
+<table>
+<thead>
+<tr>
+<th>Problem</th>
+<th>Fix</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>/download</code> returns 404</td>
+<td>Make sure the plugin is activated, then run <code>php artisan optimize:clear</code>. Also check that no page or slug named <code>download</code> exists.</td>
+</tr>
+<tr>
+<td>Always see the chooser page</td>
+<td>Check that <em>Auto-redirect</em> is on and that a link exists for your device. Try <code>/download?platform=ios</code> to test.</td>
+</tr>
+<tr>
+<td>Wrong redirect behind a CDN</td>
+<td>Don&#39;t cache <code>/download</code>. The plugin sends <code>no-store</code> and <code>Vary: User-Agent</code>, but some CDNs ignore them, so add a bypass rule for the path.</td>
+</tr>
+<tr>
+<td>Link rejected when saving</td>
+<td>It must be a full <code>http://</code> or <code>https://</code> URL.</td>
+</tr>
+<tr>
+<td>No QR code on the settings page</td>
+<td>The QR generator (<code>bacon/bacon-qr-code</code>) isn&#39;t installed on your site. Everything else still works.</td>
+</tr>
+<tr>
+<td>Stats stay at zero</td>
+<td>Make sure the plugin was activated (not just copied) so the <code>app_downloader_stats</code> table exists, and that <em>Count visits</em> is on. Crawlers and <code>&amp;preview=1</code> visits aren&#39;t counted.</td>
+</tr>
+<tr>
+<td>Old text in the admin after an update</td>
+<td>Delete the published copy in <code>lang/vendor/plugins/app-downloader</code> and run <code>php artisan optimize:clear</code>.</td>
+</tr>
+<tr>
+<td>Upload fails or stalls</td>
+<td>Check free disk space and that <code>storage/app</code> is writable. Files are stored on the private <code>local</code> disk.</td>
+</tr>
+</tbody></table>
+<h2>Uninstall</h2>
+<p>Remove the plugin from <strong>Admin → Plugins</strong>. Uploaded installers, the <code>app_downloader_stats</code> table and all <code>app_downloader_*</code> settings are deleted automatically.</p>
+<h2>Development</h2>
+<p>Unit tests cover platform detection, link fallbacks and deep-link validation:</p>
+<pre><code class="language-bash">composer require --dev phpunit/phpunit
+vendor/bin/phpunit -c platform/plugins/app-downloader/phpunit.xml.dist
+</code></pre>
+<h2>File structure</h2>
+<pre><code>app-downloader/
+├── plugin.json
+├── config/permissions.php
+├── database/migrations/
+├── routes/web.php
+├── resources/{lang/{en,vi,es,fr,ar}, views}
+├── src/{Forms, Http, Providers, Rules, Supports, Plugin.php}
+├── tests/
+└── art/            (marketplace images, not shipped in the zip)
+</code></pre>
+<h2>Support</h2>
+<ul>
+<li>Questions and bug reports: <a href="https://github.com/Themaina/maina-app-downloader/issues">GitHub issues</a></li>
+<li>Security problems: see <a href="https://github.com/Themaina/maina-app-downloader/blob/main/SECURITY.md">SECURITY.md</a></li>
+<li>Changes in each version: <a href="https://github.com/Themaina/maina-app-downloader/blob/main/CHANGELOG.md">CHANGELOG.md</a></li>
+</ul>
+<h2>License</h2>
+<p>Free and open source under the <a href="https://github.com/Themaina/maina-app-downloader/blob/main/LICENSE">MIT License</a>. © 2026 Maina Superintelligence Ltd. Made by Maina 888.</p>

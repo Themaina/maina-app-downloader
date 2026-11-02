@@ -106,7 +106,6 @@ Good places for the link: QR codes on print and packaging, email footers, social
 | Link rejected when saving | It must be a full `http://` or `https://` URL. |
 | No QR code on the settings page | The QR generator (`bacon/bacon-qr-code`) isn't installed on your site. Everything else still works. |
 | Stats stay at zero | Make sure the plugin was activated (not just copied) so the `app_downloader_stats` table exists, and that *Count visits* is on. Crawlers and `&preview=1` visits aren't counted. |
-
 | Old text in the admin after an update | Delete the published copy in `lang/vendor/plugins/app-downloader` and run `php artisan optimize:clear`. |
 | Upload fails or stalls | Check free disk space and that `storage/app` is writable. Files are stored on the private `local` disk. |
 
