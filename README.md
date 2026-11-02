@@ -40,7 +40,7 @@ Updates appear in **Admin → Plugins** whenever a new version is released.
 
 ### From a release zip
 
-1. Download `app-downloader-x.y.z.zip` from the [latest release](https://github.com/MainaSuperintelligence/botble-app-downloader/releases/latest).
+1. Download `app-downloader-x.y.z.zip` from the [latest release](https://github.com/Themaina/maina-app-downloader/releases/latest).
 2. Go to **Admin → Plugins → Add new → Upload**, pick the zip, then **Activate**.
 
 ### Manually
@@ -139,7 +139,7 @@ app-downloader/
 
 ## Support
 
-- Questions and bug reports: [GitHub issues](https://github.com/MainaSuperintelligence/botble-app-downloader/issues)
+- Questions and bug reports: [GitHub issues](https://github.com/Themaina/maina-app-downloader/issues)
 - Security problems: see [SECURITY.md](SECURITY.md)
 - Changes in each version: [CHANGELOG.md](CHANGELOG.md)
 
