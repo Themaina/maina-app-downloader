@@ -1,6 +1,6 @@
 <?php
 
-namespace MainaSuperintelligence\AppDownloader\Rules;
+namespace Maina888\AppDownloader\Rules;
 
 use Closure;
 use Illuminate\Contracts\Validation\ValidationRule;

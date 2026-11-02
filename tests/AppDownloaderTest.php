@@ -1,8 +1,8 @@
 <?php
 
-namespace MainaSuperintelligence\AppDownloader\Tests;
+namespace Maina888\AppDownloader\Tests;
 
-use MainaSuperintelligence\AppDownloader\Supports\AppDownloader;
+use Maina888\AppDownloader\Supports\AppDownloader;
 use PHPUnit\Framework\TestCase;
 
 class AppDownloaderTest extends TestCase

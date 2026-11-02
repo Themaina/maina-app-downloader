@@ -1,6 +1,6 @@
 <?php
 
-namespace MainaSuperintelligence\AppDownloader\Supports;
+namespace Maina888\AppDownloader\Supports;
 
 use Detection\MobileDetect;
 use Throwable;

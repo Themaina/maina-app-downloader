@@ -1,6 +1,6 @@
 <?php
 
-namespace MainaSuperintelligence\AppDownloader\Http\Controllers;
+namespace Maina888\AppDownloader\Http\Controllers;
 
 use BaconQrCode\Renderer\Image\SvgImageBackEnd;
 use BaconQrCode\Renderer\ImageRenderer;

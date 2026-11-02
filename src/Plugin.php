@@ -1,8 +1,8 @@
 <?php
 
-namespace MainaSuperintelligence\AppDownloader;
+namespace Maina888\AppDownloader;
 
-use MainaSuperintelligence\AppDownloader\Supports\DownloadFiles;
+use Maina888\AppDownloader\Supports\DownloadFiles;
 use Botble\PluginManagement\Abstracts\PluginOperationAbstract;
 use Botble\Setting\Models\Setting;
 use Illuminate\Support\Facades\Schema;

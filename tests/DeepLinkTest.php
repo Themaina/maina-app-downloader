@@ -1,8 +1,8 @@
 <?php
 
-namespace MainaSuperintelligence\AppDownloader\Tests;
+namespace Maina888\AppDownloader\Tests;
 
-use MainaSuperintelligence\AppDownloader\Rules\DeepLink;
+use Maina888\AppDownloader\Rules\DeepLink;
 use PHPUnit\Framework\Attributes\DataProvider;
 use PHPUnit\Framework\TestCase;
 

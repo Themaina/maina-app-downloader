@@ -1,6 +1,6 @@
 <?php
 
-namespace MainaSuperintelligence\AppDownloader\Supports;
+namespace Maina888\AppDownloader\Supports;
 
 use Illuminate\Contracts\Filesystem\Filesystem;
 use Illuminate\Support\Facades\Storage;

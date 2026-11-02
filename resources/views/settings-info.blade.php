@@ -1,5 +1,5 @@
 @php
-    use MainaSuperintelligence\AppDownloader\Supports\AppDownloader;
+    use Maina888\AppDownloader\Supports\AppDownloader;
 
     $t = fn (string $key, array $replace = []) => trans("plugins/app-downloader::app-downloader.{$key}", $replace);
     $max = max(1, $stats['redirects'] ? max($stats['redirects']) : 1, $stats['chooser']);

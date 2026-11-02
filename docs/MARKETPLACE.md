@@ -1,4 +1,4 @@
-# Marketplace listing copy (Maina 888)
+# Marketplace listing copy (maina888)
 
 **Name:** Smart App Downloader
 **Tagline:** One link that sends every visitor to the right app download.

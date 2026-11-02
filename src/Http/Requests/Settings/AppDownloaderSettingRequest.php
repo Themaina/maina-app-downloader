@@ -1,9 +1,9 @@
 <?php
 
-namespace MainaSuperintelligence\AppDownloader\Http\Requests\Settings;
+namespace Maina888\AppDownloader\Http\Requests\Settings;
 
-use MainaSuperintelligence\AppDownloader\Rules\DeepLink;
-use MainaSuperintelligence\AppDownloader\Supports\AppDownloader;
+use Maina888\AppDownloader\Rules\DeepLink;
+use Maina888\AppDownloader\Supports\AppDownloader;
 use Botble\Base\Rules\OnOffRule;
 use Botble\Support\Http\Requests\Request;
 

@@ -1,12 +1,12 @@
 <?php
 
-namespace MainaSuperintelligence\AppDownloader\Forms\Settings;
+namespace Maina888\AppDownloader\Forms\Settings;
 
 use BaconQrCode\Writer;
-use MainaSuperintelligence\AppDownloader\Http\Requests\Settings\AppDownloaderSettingRequest;
-use MainaSuperintelligence\AppDownloader\Supports\AppDownloader;
-use MainaSuperintelligence\AppDownloader\Supports\DownloadFiles;
-use MainaSuperintelligence\AppDownloader\Supports\Stats;
+use Maina888\AppDownloader\Http\Requests\Settings\AppDownloaderSettingRequest;
+use Maina888\AppDownloader\Supports\AppDownloader;
+use Maina888\AppDownloader\Supports\DownloadFiles;
+use Maina888\AppDownloader\Supports\Stats;
 use Botble\Base\Forms\FieldOptions\ColorFieldOption;
 use Botble\Base\Forms\FieldOptions\HtmlFieldOption;
 use Botble\Base\Forms\FieldOptions\MediaImageFieldOption;

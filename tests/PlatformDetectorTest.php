@@ -1,8 +1,8 @@
 <?php
 
-namespace MainaSuperintelligence\AppDownloader\Tests;
+namespace Maina888\AppDownloader\Tests;
 
-use MainaSuperintelligence\AppDownloader\Supports\PlatformDetector;
+use Maina888\AppDownloader\Supports\PlatformDetector;
 use PHPUnit\Framework\Attributes\DataProvider;
 use PHPUnit\Framework\TestCase;
 

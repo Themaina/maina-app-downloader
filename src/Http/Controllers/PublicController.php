@@ -1,11 +1,11 @@
 <?php
 
-namespace MainaSuperintelligence\AppDownloader\Http\Controllers;
+namespace Maina888\AppDownloader\Http\Controllers;
 
-use MainaSuperintelligence\AppDownloader\Supports\AppDownloader;
-use MainaSuperintelligence\AppDownloader\Supports\DownloadFiles;
-use MainaSuperintelligence\AppDownloader\Supports\PlatformDetector;
-use MainaSuperintelligence\AppDownloader\Supports\Stats;
+use Maina888\AppDownloader\Supports\AppDownloader;
+use Maina888\AppDownloader\Supports\DownloadFiles;
+use Maina888\AppDownloader\Supports\PlatformDetector;
+use Maina888\AppDownloader\Supports\Stats;
 use Botble\Base\Http\Controllers\BaseController;
 use Botble\SeoHelper\Facades\SeoHelper;
 use Botble\Theme\Facades\Theme;

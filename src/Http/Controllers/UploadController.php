@@ -1,9 +1,9 @@
 <?php
 
-namespace MainaSuperintelligence\AppDownloader\Http\Controllers;
+namespace Maina888\AppDownloader\Http\Controllers;
 
-use MainaSuperintelligence\AppDownloader\Supports\AppDownloader;
-use MainaSuperintelligence\AppDownloader\Supports\DownloadFiles;
+use Maina888\AppDownloader\Supports\AppDownloader;
+use Maina888\AppDownloader\Supports\DownloadFiles;
 use Botble\Base\Http\Controllers\BaseController;
 use Illuminate\Http\JsonResponse;
 use Illuminate\Http\Request;

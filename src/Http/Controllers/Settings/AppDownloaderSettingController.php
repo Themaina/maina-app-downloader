@@ -1,9 +1,9 @@
 <?php
 
-namespace MainaSuperintelligence\AppDownloader\Http\Controllers\Settings;
+namespace Maina888\AppDownloader\Http\Controllers\Settings;
 
-use MainaSuperintelligence\AppDownloader\Forms\Settings\AppDownloaderSettingForm;
-use MainaSuperintelligence\AppDownloader\Http\Requests\Settings\AppDownloaderSettingRequest;
+use Maina888\AppDownloader\Forms\Settings\AppDownloaderSettingForm;
+use Maina888\AppDownloader\Http\Requests\Settings\AppDownloaderSettingRequest;
 use Botble\Base\Http\Responses\BaseHttpResponse;
 use Botble\Base\Supports\Breadcrumb;
 use Botble\Setting\Http\Controllers\SettingController;

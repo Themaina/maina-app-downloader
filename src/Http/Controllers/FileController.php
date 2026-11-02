@@ -1,8 +1,8 @@
 <?php
 
-namespace MainaSuperintelligence\AppDownloader\Http\Controllers;
+namespace Maina888\AppDownloader\Http\Controllers;
 
-use MainaSuperintelligence\AppDownloader\Supports\DownloadFiles;
+use Maina888\AppDownloader\Supports\DownloadFiles;
 use Botble\Base\Http\Controllers\BaseController;
 use Symfony\Component\HttpFoundation\Response;
 

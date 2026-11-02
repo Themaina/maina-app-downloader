@@ -1,10 +1,10 @@
 <?php
 
-use MainaSuperintelligence\AppDownloader\Http\Controllers\FileController;
-use MainaSuperintelligence\AppDownloader\Http\Controllers\PublicController;
-use MainaSuperintelligence\AppDownloader\Http\Controllers\QrCodeController;
-use MainaSuperintelligence\AppDownloader\Http\Controllers\Settings\AppDownloaderSettingController;
-use MainaSuperintelligence\AppDownloader\Http\Controllers\UploadController;
+use Maina888\AppDownloader\Http\Controllers\FileController;
+use Maina888\AppDownloader\Http\Controllers\PublicController;
+use Maina888\AppDownloader\Http\Controllers\QrCodeController;
+use Maina888\AppDownloader\Http\Controllers\Settings\AppDownloaderSettingController;
+use Maina888\AppDownloader\Http\Controllers\UploadController;
 use Botble\Base\Facades\AdminHelper;
 use Botble\Theme\Facades\Theme;
 use Illuminate\Support\Facades\Route;
