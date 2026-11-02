@@ -6,7 +6,7 @@ One link for every device. Share `https://your-site.com/download` and each visit
 
 **Free and open source** by **Maina 888** · Maina Superintelligence Ltd
 
-**Version:** 1.1.0 · **Requires:** Botble CMS core 7.3.0+, PHP 8.2+ · **License:** MIT
+**Version:** 1.1.1 · **Requires:** Botble CMS core 7.3.0+, PHP 8.2+ · **License:** MIT
 
 ## Features
 
